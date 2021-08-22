@@ -14,13 +14,13 @@ sensePort = Port.S1
 # Initialize the color sensor.
 line_sensor = ColorSensor(sensePort)
 
-wheelDim = 55.7
+wheelDim = 56
 wheelCirc = wheelDim * 3.14
 
+axlTrk = 111
+
 # Initialize the drive base.
-robot = DriveBase(left_motor, right_motor, wheel_diameter = wheelDim, axle_track=111.2)
-
-
+robot = DriveBase(left_motor, right_motor, wheel_diameter = wheelDim, axle_track = axlTrk)
 
 goalDisMil = 1000
 goalDisDeg = (goalDisMil / wheelCirc) * 360
