@@ -49,5 +49,4 @@ while totAvgDeg < goalDisDeg:
 
     totAvgDeg = (lAng + rAng) / 2
 
-left_motor.hold()
-right_motor.hold()
+robot.stop()
