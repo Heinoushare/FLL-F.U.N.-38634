@@ -48,3 +48,6 @@ while totAvgDeg < goalDisDeg:
     rAng = int(right_motor.angle() - rDedAng)
 
     totAvgDeg = (lAng + rAng) / 2
+
+left_motor.hold()
+right_motor.hold()
